@@ -1,6 +1,6 @@
 #include <stdio.h>
 #include <sys/prctl.h>
-
+#include<unistd.h>
 
 
 
@@ -23,6 +23,7 @@ int create_system_server()
     const char *name = "system_server";
 
     printf("여기서 시스템 프로세스를 생성합니다.\n");
-
+	/*fork 사용*/
+    system_server();
     return 0;
 }

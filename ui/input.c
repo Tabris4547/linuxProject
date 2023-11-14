@@ -14,13 +14,13 @@ int input()
 
     return 0;
 }
-
 int create_input()
 {
     pid_t systemPid;
     const char *name = "input";
 
     printf("여기서 input 프로세스를 생성합니다.\n");
-
+    input();
     return 0;
 }
+
